@@ -51,18 +51,19 @@
             <!-- form to submit css for linting -->
             <form id="in">
                 <div class="line">
-                <label for="input" class="summary">Your CSS goes here. The more, the better. Linting works best when we see the big picture, so give us everything you've got. </label>
-                <textarea id="input" name="css" class="css"></textarea>
-
-          
-                
-                <div class="btn" id="options">
-                	<ul class="btnList">
-                  	<li class="submit"><a href="#" id="lint">Lint!</a></li><li class="options"><a id="showOptions" alt="options"><span class="textEquiv">Options</span><b class="arrow"></b></a></li><!-- must be on one line -->
-                  </ul>
-                	<div class="btnDrop">
-                  	
-                    <p class="summary mvm pvn">Options: Expert users may want to test their own special set of rules. You can pick and choose which errors and warnings to test for below.</p>
+                    <label for="input" class="summary">Your CSS goes here. The more, the better. Linting works best when we see the big picture, so give us everything you've got. </label>
+                    <textarea id="input" name="css" class="css"></textarea>
+                </div>
+                <div class="line">
+                    <div class="unit size2of3 options-block">
+                        <p><a href="#" class="h2" id="options-btn"><b class="arrow"></b>Options</a></p>
+                        <p class="summary mvm pvn">Pick and choose which rules to test for below.</p>
+                    </div>
+                    <div class="unit size1of3 txtR">
+                        <button id="lint" class="lint-btn">Lint!</button>
+                    </div>                    
+                </div>
+                <div class="options-panel">                    
                   	<div class="line">
                           <div class="unit size1of3">
                               <h3>Errors</h3>
@@ -96,7 +97,7 @@
                               </ul>                        
                           </div>
                       </div>
-                      <div class="line">
+                    <div class="line">
                           <div class="unit size1of3">
                               <h3>Maintainability & Duplication</h3>
                               <ul class="optionsList">
@@ -114,11 +115,10 @@
                               </ul>                        
                           </div>
                       </div>
-                      <a class="right" href="about.html#docs">Learn More About the Rules</a>
-                  </div>
-                </div>
-                                
-                </div>
+                    <a class="right" href="about.html#docs">Learn More About the Rules</a>
+               
+                </div>      
+
             </form>
         </div>
     </div>

@@ -43,8 +43,9 @@
 		 * set up options menu 
 		 */
 		
-		$('#showOptions').click(function() {
-			$('#options').toggleClass("open");
+		$('#options-btn').click(function() {
+            $(".options-block").toggleClass("options-block-open");
+            $('.options-panel').toggleClass("options-panel-open");
 			return false;
 		});
 	/*
